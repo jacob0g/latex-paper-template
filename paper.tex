@@ -1,0 +1,32 @@
+% ============================================================
+%   Minimal Academic Paper Template
+%   References via biblatex
+% ============================================================
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2.2cm]{geometry}
+% \usepackage{enumitem}
+% \usepackage{siunitx}
+% \usepackage{graphicx}
+
+% --- Bibliography: external .bib file, APA 7th ---
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+\title{Academic Paper Template}
+\author{John Doe}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+% remove page number from cover page
+\thispagestyle{empty}
+
+% ...
+
+% --- Bibliography: external .bib file, APA 7th ---
+\printbibliography[title={References}]
+
+\end{document}
